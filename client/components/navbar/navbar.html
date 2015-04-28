@@ -1,0 +1,8 @@
+
+<ul class="nav nav-pills nav-stacked " ng-controller="NavbarCtrl">
+  <li ng-repeat="item in menu" ng-class="{active: isActive(item.link) || isSubDirectory(item.link)}">
+    <a ng-href="{{item.link}}">{{item.title}}</a>
+  </li>
+</ul>
+
+<hr>

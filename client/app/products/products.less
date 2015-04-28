@@ -1,0 +1,36 @@
+.showcase {
+	.thumbnail {
+		cursor: pointer; cursor: hand;
+
+		min-height: 226px;
+  	padding-top: 20px;
+
+  	&:hover {
+  		background-color: #428bca;
+  		color: #fff;
+
+  		h3 {
+  			color: #fff;
+  		}
+  	}
+	}
+
+	&.details {
+		min-height: 360px;
+
+		.thumbnail {
+			min-height: 0;
+			padding-top: 0;
+
+			&:hover {
+	  		background-color: #fff;
+	  		color: #000;
+
+	  		h3 {
+	  			color: #000;
+	  		}
+	  	}
+		}
+	}
+}
+

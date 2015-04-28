@@ -1,0 +1,15 @@
+<header class="jumbotron">
+	<h1 class="text-center">Products</h1>
+
+	<div class="container-fluid">
+		<div class="nav nav-custom">
+			<ul class="nav nav-pills" ng-controller="NavbarCtrl">
+			  <li ng-class="{active: isActive('/products')}"><a href="/products"><i class="fa fa-th"></i> List</a></li>
+			  <li ng-class="{active: isChildrenDirectory('/products')}"><a href="/products/0"><i class="fa fa-square"></i> Detail</a></li>
+			  <li ng-class="{active: isActive('/contacts/message')}"><a target="_self" href="/downloadable/brochure.pdf"><i class="fa fa-download"></i> Brochure</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<div ui-view></div>

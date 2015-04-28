@@ -1,0 +1,63 @@
+.nav.nav-custom {
+	text-align: center;
+	margin-top: 25px;
+
+	ul {
+		display: inline-block;
+	}	
+}
+
+.callable {
+	cursor: pointer; cursor: hand;
+	
+	-ms-transition: all 1s ease 0;
+ 	-webkit-transition: all 1s ease 0;
+  transition: all 1s ease 0;
+
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg); 
+  transform: rotate(135deg);
+
+  &:hover {
+  	-ms-transform: rotate(0);
+	  -webkit-transform: rotate(0); 
+	  transform: rotate(0);
+
+	  color:green;
+  }
+}
+
+.mailable {
+	cursor: pointer; cursor: hand;
+
+	-ms-transition: all 1s ease 0;
+ 	-webkit-transition: all 1s ease 0;
+  transition: all 1s ease 0;
+
+  .first {
+  	visibility: visible;
+  }
+
+  .second {
+  	visibility: hidden;
+  }
+
+  &:hover {
+  	color: green;
+
+  	.second {
+	  	visibility: visible;
+	  	left: -7px;
+	  }
+
+	  .first {
+	  	visibility: hidden;
+	  }
+  }
+}
+
+.angular-google-map-container {
+    height: 350px;
+    border: 5px solid gray;
+ 		margin-bottom: 10px;
+}

@@ -1,0 +1,17 @@
+<header class="jumbotron">
+	<h1 class="text-center">Contacts</h1>
+
+	<div class="container-fluid">
+		<div class="nav nav-custom">
+			<ul class="nav nav-pills" ng-controller="NavbarCtrl">
+			  <li ng-class="{active: isActive('/contacts')}"><a href="/contacts"><i class="fa fa-phone"></i> Phone</a></li>
+			  <li ng-class="{active: isActive('/contacts/location')}"><a href="/contacts/location"><i class="fa fa-map-marker"></i> Location</a></li>
+			  <li ng-class="{active: isActive('/contacts/message')}"><a href="/contacts/message"><i class="fa fa-envelope"></i> Message</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<div ui-view></div>
+
+
