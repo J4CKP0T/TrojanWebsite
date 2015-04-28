@@ -7,10 +7,10 @@ angular.module('trojanApp')
       'title': 'Home',
       'link': '/'
     },
-    {
-      'title': 'Info',
-      'link': '/info'
-    },
+    // {
+    //   'title': 'Info',
+    //   'link': '/info'
+    // },
     {
       'title': 'Products',
       'link': '/products'
